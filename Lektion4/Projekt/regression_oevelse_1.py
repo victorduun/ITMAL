@@ -1,3 +1,5 @@
+# %%
+# Define functions for each question
 def question_1a():
     from sklearn import datasets
     import matplotlib.pyplot as plt
@@ -18,9 +20,7 @@ def question_1a():
     plt.show()
 
 
+# %% md
 question_1a()
 
-#%% md
-# Test
-
-#%%
+# %%

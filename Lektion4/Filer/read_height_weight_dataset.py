@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Load data
-data = np.loadtxt('height_weight.csv', delimiter=';', skiprows=1)
+data = np.loadtxt(r'C:\Users\victo\Aarhus universitet\Test - Dokumenter\Elektronik\Noter Elektronik\Elektronik 6. semester\ITMAL\ITMAL - Exercises\Lektion4\Filer\height_weight.csv', delimiter=';', skiprows=1)
 X = data[:,1:3]
 y = data[:,0]
 
