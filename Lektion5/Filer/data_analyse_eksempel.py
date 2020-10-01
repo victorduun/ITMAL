@@ -6,8 +6,8 @@ from scipy.stats import norm
 
 # Load data - vægt data (kvinder/mænd)
 data = np.loadtxt('height_weight.csv', delimiter=';', skiprows=1)
-X = data[:,1:3]
-y = data[:,0]
+X = data[:, 1:3]
+y = data[:, 0]
 
 
 #%% plot 2D - "korrelationsplot"
