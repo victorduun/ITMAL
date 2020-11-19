@@ -1,8 +1,12 @@
 import json
 import numpy as np
+import inspect
+import os
 from dataclasses import dataclass
+dirname = os.path.dirname(os.path.abspath(inspect.stack()[0][1]))
 
-path = r'C:\Users\victo\Aarhus Universitet\Test - Dokumenter\Elektronik\Noter Elektronik\Elektronik 6. semester\ITMAL\ITMAL - Exercises\Aflevering4\ship_data\shipsnet.json'
+datapath = os.path.join(dirname, '../data/raw/shipsnet.json')
+
 
 
 @dataclass
@@ -14,7 +18,8 @@ class ShipsData:
 
 
 def load_ship_data() -> ShipsData:
-    with open(path) as file:
+    print("Loading ship data from path: " + datapath)
+    with open(datapath) as file:
         dataset = json.load(file)
         # dataset.keys() # - dict_keys(['data', 'labels', 'locations', 'scene_ids'])
         images = np.array(dataset["data"]).astype("uint8")
@@ -24,8 +29,9 @@ def load_ship_data() -> ShipsData:
         img_length = 80
         images = images.reshape(-1, 3, img_length, img_length).transpose([0, 2, 3, 1])
     ships = ShipsData(images, labels, locations, scene_ids)
+    print("Ship data loaded")
     return ships
 
 
 def get_path():
-    return path
+    return datapath
