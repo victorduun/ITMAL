@@ -54,7 +54,9 @@ We use a script in src\models for training of our Machine Learning model. We may
 
 # Notebooks
 
-Jupyter notebooks are excellent for prototyping, exploring and communicating findings, however they aren’t very good for long-term growth and can be less effective for reproducibility. Notebooks can be further divided into sub-folders such as Notebooks\explorations and Notebooks\PoC . Using a good naming conventions helps to distinguish what populates each notebook — a useful template is ```<step>-<user>-<description>.ipynb``` (i.e. 01-kpy-eda.ipynb) where the step serves as an ordering mechanism, the creator’s first name initial, and first 2 letters of surname and description of what the notebook contains.
+Jupyter notebooks are excellent for prototyping, exploring and communicating findings, however they aren’t very good for long-term growth and can be less effective for reproducibility. Notebooks can be further divided into sub-folders such as Notebooks\explorations and Notebooks\PoC. 
+
+Using a good naming conventions helps to distinguish what populates each notebook — a useful template is ```<step>-<user>-<description>.ipynb``` (i.e. 01-kpy-eda.ipynb) where the step serves as an ordering mechanism, the creator’s first name initial, and first 2 letters of surname and description of what the notebook contains.
 
 # Src
 
