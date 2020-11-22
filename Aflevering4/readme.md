@@ -22,22 +22,23 @@ Kør følgende kommando i powershell som  adminstrator:
 # Mappestruktur
 
 ```
-project
-│   README.md
-│   makefile
-└───data
-│   │
-│   └───external    <- Third party data
-│   └───interim     <- Transformed intermediate data, not ready for modelling
-│   └───processed   <-Prepared data, ready for modelling
-│   └───raw         <- Immutable original data
-│   
-└───models          <- Serialized model
-└───notebooks       <-Jupyter notebooks for exploration, communication and prototyping
-└───src             <-Folder containing project source code
-│   └───data        <- Folder containing scripts to download/generate data
-│   └───features    <- Folder containing scripts to transform data for modelling
-│   └───model       <- Folder containing scripts to train and predict
+📦project
+ ┣ 📂data
+ ┃ ┣ 📂external     ← Third party data
+ ┃ ┣ 📂interim      ← Transformed intermediate data, not ready for modelling
+ ┃ ┣ 📂processed    ← Prepared data, ready for modelling
+ ┃ ┗ 📂raw          ← Immutable original data
+ ┃
+ ┣ 📂models         ← Serialized model
+ ┣ 📂notebooks      ← Jupyter notebooks for exploration, communication and prototyping
+ ┣ 📂src            ← Folder containing project source code
+ ┃ ┣ 📂data         ← Folder containing scripts to download/generate data
+ ┃ ┣ 📂features     ← Folder containing scripts to transform data for modelling
+ ┃ ┗ 📂model        ← Folder containing scripts to train and predict
+ ┃
+ ┣ 📜.gitignore
+ ┣ 📜makefile
+ ┗ 📜README.md
 ```
 
 # Data
@@ -67,3 +68,4 @@ Jupyter notebooks are excellent for prototyping, exploring and communicating fin
 
 https://towardsdatascience.com/structuring-machine-learning-projects-be473775a1b6
 https://towardsdatascience.com/structure-and-automated-workflow-for-a-machine-learning-project-2fa30d661c1e
+
