@@ -3,9 +3,9 @@ import numpy as np
 import inspect
 import os
 from dataclasses import dataclass
-dirname = os.path.dirname(os.path.abspath(inspect.stack()[0][1]))
+dirname = os.path.dirname(os.path.abspath(inspect.stack()[0][1])) #Current folder
 
-datapath = os.path.join(dirname, '../data/raw/shipsnet.json')
+datapath = os.path.join(dirname, '../../data/raw/shipsnet.json') 
 
 
 
