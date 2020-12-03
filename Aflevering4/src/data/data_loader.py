@@ -33,5 +33,11 @@ def load_ship_data() -> ShipsData:
     return ships
 
 
+def load_ship_data_normalized() -> ShipsData:
+    ships_data = load_ship_data()
+    ships_data.images = ships_data.images/255
+    return ships_data
+
+
 def get_path():
     return datapath
