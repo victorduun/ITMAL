@@ -9,7 +9,7 @@ Kør følgende kommando i powershell som  adminstrator:
 
 >choco install make
 
-3. Installer kaggle 
+3. Installer kaggle. Hvis kaggle ikke fungerer så sørg for at PATH er sat (systemmiljøvariable/environment variable) til Scripts mappen hvor python er installeret.
 
 
 >make kaggle
